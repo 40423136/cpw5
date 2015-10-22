@@ -1,0 +1,55 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>最簡單的 reveal 超文件</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>有關我的作業</h1>
+    <p>40423136陳柏維</p>		
+</section>
+	
+<section id="hw-task-one">
+    <h1>作業任務一</h1>
+    <p>使用 Git 在 Github 與 Bitbucket 管理個人, 分組與班上倉儲資料:http://backlogtool.com/git-guide/tw/intro/intro1_1.html 與 Leo Editor Tutorial 與 What Engineers do?, 作業內容: 看完說明, 利用 Leo Editor 摘要重點, 建立個人 Github 課程倉儲 (名稱為 2015cadp)</p>		</p>
+    <p>請參考 <a href="http://www.google.com">Google</a>
+</section>
+				
+<section>
+    <h1>心得  和  自評</h1>
+    <p>我覺得在這門課當中可以學到很多程式的運用以及大開我們的眼界,原來科技進步的速度之快,電腦可以幫我們做這麼多的事,雖然從未接觸過程式的我,學習過程有點吃力,但相信配合老師的步驟,重複多做幾次,會越來越熟悉這套程式的,    自評分數 65分</p>
+    <p>可以連結到內部投影片<a href="#/hw-task-one">作業任務一</a>
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+
